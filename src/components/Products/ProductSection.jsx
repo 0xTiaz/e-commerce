@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils";
 import soccerBall from "@/assets/soccerBall.png";
 import hockeyPuck from "@/assets/hockeyPuck.png";
 import baseBallball from "@/assets/baseBallball.png";
-import baseBallCap from "@/assets/baseBallCap.png";
+import baseBallCap from "@/assets/BaseballCap.png";
 import { ShoppingCart } from "lucide-react";
 
 const prodItems = [
