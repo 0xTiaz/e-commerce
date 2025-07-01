@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Links } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Menu, ShoppingBag, X } from "lucide-react";
 
@@ -44,13 +44,13 @@ const Navbar = () => {
         {/* Desktop Navbar */}
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, key) => (
-            <a
+            <Link
               key={key}
-              href={item.href}
+              to={item.href}
               className="text-foreground/80 hover:text-primary transition-colors duration-300"
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
         <div className="flex gap-2">

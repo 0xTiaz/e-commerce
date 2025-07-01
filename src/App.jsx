@@ -6,6 +6,7 @@ import BackgroundEffects from "./components/BackgroundEffect/BackgroundEffects";
 import Home from "./pages/Home";
 import ProductSection from "./components/Products/ProductSection";
 import Products from "./pages/Products";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
