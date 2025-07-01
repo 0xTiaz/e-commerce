@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import frontPhone from "@/assets/frontPhone.png";
 import sFlip from "@/assets/sFlip.png";
-import bHeadphones from "@/assets/b-Headphones.png";
+import bHeadphones from "@/assets/b-headphones.png";
 import baseBall from "@/assets/baseBall.png";
 import Bicycle from "@/assets/bicycle.png";
 import brownSweater from "@/assets/brownSweater.png";
@@ -13,7 +13,6 @@ import tShirt from "@/assets/tShirt.png";
 import soccerGoalie from "@/assets/soccerGoalie.png";
 import speaker from "@/assets/speaker.png";
 import { cn } from "@/lib/utils";
-import Catalog from "../catalog/Catalog";
 import soccerBall from "@/assets/soccerBall.png";
 import hockeyPuck from "@/assets/hockeyPuck.png";
 import baseBallball from "@/assets/baseBallball.png";
