@@ -23,17 +23,17 @@ const catItems = [
   {
     name: "Headphones",
     img: wHeadphones,
-    imgcss: "w-60 left-30",
+    imgcss: "w-60 left-10 top-10 md:left-30",
     img2: bHeadPhones,
-    imgcss2: "w-60 left-60 rotate-340",
+    imgcss2: "w-60 left-40 md:left-60 rotate-340",
     css: "to-red-500 from-red-50 overflow-hidden",
   },
   {
     name: "Smartphones",
     img: frontPhoneApps,
-    imgcss: "w-100 left-40 z-10",
+    imgcss: "w-100 md:left-40 z-10 left-20 sm:top-30",
     img2: backPhone,
-    imgcss2: "w-100 top-[-20px] left-28",
+    imgcss2: "w-100 md:top-10 md:left-28 left-10 top-",
     css: "to-amber-500 from-red-50 overflow-hidden",
   },
   {
@@ -49,7 +49,7 @@ const catItems = [
     img: playStation,
     imgcss: "w-60 left-50 bottom-1 z-10",
     img2: "",
-    imgcss2: "w-50 left-0",
+    imgcss2: "w-50 left-0 ",
     css: "to-white-500 from-green-500 overflow-hidden",
   },
   {
@@ -71,15 +71,15 @@ const catItems = [
 ];
 const Catalog = () => {
   return (
-    <section className="flex flex-col min-h-screen justify-around items-center w-full">
-      <div className="w-full">
+    <section className="flex flex-col min-h-screen items-center w-full py-10">
+      <div className="w-full py-10">
         <h1 className="text-4xl font-bold">Catalogo</h1>
       </div>
-      <div className="container flex flex-wrap justify-around gap-6 max-w-400">
+      <div className="container grid grid-cols-1 md:grid-cols-3 w-full justify-around gap-6">
         {catItems.map((item, key) => (
           <div
             className={cn(
-              "shadow-md transition-all duration-300 relative w-[30%] h-60 flex card-hover rounded-xl p-6 bg-linear-to-tr",
+              "shadow-md transition-all duration-300 relative h-60 card-hover rounded-xl p-6 bg-linear-to-tr",
               item.css
             )}
           >
@@ -96,7 +96,7 @@ const Catalog = () => {
               alt=""
               className={cn("absolute", item.imgcss2)}
             />
-            <p className="right-100 text-3xl text-white font-semibold z-20">
+            <p className="right-100 text-3xl text-start text-white font-semibold z-20">
               {item.name}
             </p>
           </div>

@@ -160,7 +160,7 @@ const ProductSection = () => {
       {/* <div>
         <Catalog />
       </div> */}
-      <div className="w-[80%] px-2 py-4">
+      <div className="container w-[80%] px-2 py-4">
         <div className="w-full py-10">
           <h1 className="text-4xl font-bold">Products</h1>
         </div>
