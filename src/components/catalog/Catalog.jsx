@@ -1,23 +1,14 @@
-import React from "react";
 import { cn } from "@/lib/utils";
 import wHeadphones from "@/assets/w-headphones.png";
 import bHeadPhones from "@/assets/b-headphones.png";
-import frontPhone from "@/assets/frontPhone.png";
 import frontPhoneApps from "@/assets/frontPhoneApps.png";
 import backPhone from "@/assets/backPhone.png";
 import speaker from "@/assets/speaker.png";
-import bicycle from "@/assets/bicycle.png";
 import playStation from "@/assets/playStation.png";
-import nintendoSwitch from "@/assets/nintendoSwitch.png";
-import baseBall from "@/assets/baseBall.png";
-import soccerGoalie from "@/assets/soccerGoalie.png";
 import Hockey from "@/assets/hockey.png";
 import soccerBall from "@/assets/soccerBall.png";
 import Shirt from "@/assets/Shirt.png";
-import tShirt from "@/assets/tShirt.png";
-import pants from "@/assets/pants.png";
 import sweater from "@/assets/sweater.png";
-import brownSweater from "@/assets/brownSweater.png";
 
 const catItems = [
   {
@@ -78,6 +69,7 @@ const Catalog = () => {
       <div className="container grid grid-cols-1 md:grid-cols-3 w-full justify-around gap-6">
         {catItems.map((item, key) => (
           <div
+            key={key}
             className={cn(
               "shadow-md transition-all duration-300 relative h-60 card-hover rounded-xl p-6 bg-linear-to-tr",
               item.css
@@ -85,17 +77,11 @@ const Catalog = () => {
           >
             <img
               src={item.img}
-              width=""
-              alt=""
               className={cn("absolute", item.imgcss)}
+              loading="lazy"
               //   "absolute rotate-330 top-30 right-2 z-0"
             />
-            <img
-              src={item.img2}
-              width=""
-              alt=""
-              className={cn("absolute", item.imgcss2)}
-            />
+            <img src={item.img2} className={cn("absolute", item.imgcss2)} />
             <p className="right-100 text-3xl text-start text-white font-semibold z-20">
               {item.name}
             </p>
